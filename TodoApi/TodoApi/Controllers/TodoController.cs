@@ -66,5 +66,19 @@ namespace TodoApi.Controllers
             _context.SaveChanges();
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(long id)
+        {
+            var todo = _context.todoItems.Find(id);
+            if (todo == null)
+            {
+                return NotFound();
+            }
+
+            _context.todoItems.Remove(todo);
+            _context.SaveChanges();
+            return NoContent();
+        }
     }
 }
