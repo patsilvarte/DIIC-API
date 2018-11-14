@@ -107,10 +107,11 @@ function editItem(id) {
 
 $(".my-form").on("submit", function () {
     const item = {
-        name: $("#edit-name").val(),
-        extraInfo: $("#edit-extra-info").val(),
+        id: $("#edit-id").val(),
         beaconId: $("#edit-beacon-id").val(),
-        id: $("#edit-id").val()
+        name: $("#edit-name").val(),
+        extraInfo: $("#edit-extra-info").val()
+        
     };
 
     $.ajax({

@@ -60,8 +60,9 @@ namespace TodoApi.Controllers
                 return NotFound();
             }
 
-            //todo.IsComplete = item.IsComplete;
             todo.Name = item.Name;
+            todo.ExtraInfo = item.ExtraInfo;
+            todo.beaconId = item.beaconId;
 
             _context.beaconItems.Update(todo);
             _context.SaveChanges();
