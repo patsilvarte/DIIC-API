@@ -1,0 +1,14 @@
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.csprojAssemblyReference.cache
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.csproj.CoreCompileInputs.cache
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.RazorAssemblyInfo.cache
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.RazorAssemblyInfo.cs
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.AssemblyInfoInputs.cache
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.AssemblyInfo.cs
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.deps.json
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.runtimeconfig.json
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.runtimeconfig.dev.json
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.dll
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.pdb
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.RazorTargetAssemblyInfo.cache
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.dll
+E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.pdb
