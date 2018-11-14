@@ -33,8 +33,10 @@
     <h1>To-do CRUD</h1>
     <h3>Add</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New to-do">
-        <input type="submit" value="Add">
+        <input type="text" id="add-beacon-id" placeholder="New beacon id">
+        <input type="text" id="add-name" placeholder="beacon name">
+        <input type="text" id="add-extra-info" placeholder="info of the beacon (optional)">
+        <input type="submit" value="Add"> 
     </form>
 
     <div id="spoiler">
@@ -52,10 +54,9 @@
 
     <table>
         <tr>
-            <th>Is Complete</th>
             <th>Name</th>
-            <th></th>
-            <th></th>
+            <th>Beacon Id</th>
+            <th>Extra Info</th>
         </tr>
         <tbody id="todos"></tbody>
     </table>

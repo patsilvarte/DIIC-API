@@ -5,35 +5,36 @@ using TodoApi.models;
 
 namespace TodoApi.Controllers
 {
-    [Route("api/todo")]
+    [Route("api/beacons")]
     [ApiController]
     public class TodoController : ControllerBase
     {
-        private readonly TodoContext _context;
+        private readonly BeaconContext _context;
 
-        public TodoController(TodoContext context)
+        public TodoController(BeaconContext context)
         {
             _context = context;
-
-            if (_context.todoItems.Count() == 0)
+            
+            //ver depois se da para tirar
+            if (_context.beaconItems.Count() == 0)
             {
                 // Create a new TodoItem if collection is empty,
                 // which means you can't delete all TodoItems.
-                _context.todoItems.Add(new todoItem { Name = "Item1" });
+                _context.beaconItems.Add(new BeaconItem { Name = "Beacon1" });
                 _context.SaveChanges();
             }
         }
 
         [HttpGet]
-        public ActionResult<List<todoItem>> GetAll()
+        public ActionResult<List<BeaconItem>> GetAll()
         {
-            return _context.todoItems.ToList();
+            return _context.beaconItems.ToList();
         }
 
-        [HttpGet("{id}", Name = "GetTodo")]
-        public ActionResult<todoItem> GetById(long id)
+        [HttpGet("{id}", Name = "GetBeacon")]
+        public ActionResult<BeaconItem> GetById(long id)
         {
-            var item = _context.todoItems.Find(id);
+            var item = _context.beaconItems.Find(id);
             if (item == null)
             {
                 return NotFound();
@@ -42,27 +43,27 @@ namespace TodoApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(todoItem item)
+        public IActionResult Create(BeaconItem item)
         {
-            _context.todoItems.Add(item);
+            _context.beaconItems.Add(item);
             _context.SaveChanges();
 
-            return CreatedAtRoute("GetTodo", new { id = item.Id }, item);
+            return CreatedAtRoute("GetBeacon", new { id = item.Id }, item);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(long id, todoItem item)
+        public IActionResult Update(long id, BeaconItem item)
         {
-            var todo = _context.todoItems.Find(id);
+            var todo = _context.beaconItems.Find(id);
             if (todo == null)
             {
                 return NotFound();
             }
 
-            todo.IsComplete = item.IsComplete;
+            //todo.IsComplete = item.IsComplete;
             todo.Name = item.Name;
 
-            _context.todoItems.Update(todo);
+            _context.beaconItems.Update(todo);
             _context.SaveChanges();
             return NoContent();
         }
@@ -70,13 +71,13 @@ namespace TodoApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
-            var todo = _context.todoItems.Find(id);
+            var todo = _context.beaconItems.Find(id);
             if (todo == null)
             {
                 return NotFound();
             }
 
-            _context.todoItems.Remove(todo);
+            _context.beaconItems.Remove(todo);
             _context.SaveChanges();
             return NoContent();
         }

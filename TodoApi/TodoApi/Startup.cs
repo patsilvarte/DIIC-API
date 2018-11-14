@@ -10,8 +10,8 @@ namespace TodoApi
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(opt =>
-                opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<BeaconContext>(opt =>
+                opt.UseInMemoryDatabase("BeaconList"));
             services.AddMvc()
                     .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

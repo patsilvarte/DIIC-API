@@ -1,11 +1,11 @@
-﻿const uri = "api/todo";
-let todos = null;
+﻿const uri = "api/beacons";
+let beacons = null;
 function getCount(data) {
     const el = $("#counter");
-    let name = "to-do";
+    let name = "beacon";
     if (data) {
         if (data > 1) {
-            name = "to-dos";
+            name = "beacons";
         }
         el.text(data + " " + name);
     } else {
@@ -23,7 +23,7 @@ function getData() {
         url: uri,
         cache: false,
         success: function (data) {
-            const tBody = $("#todos");
+            const tBody = $("#beacons");
 
             $(tBody).empty();
 
@@ -31,15 +31,6 @@ function getData() {
 
             $.each(data, function (key, item) {
                 const tr = $("<tr></tr>")
-                    .append(
-                        $("<td></td>").append(
-                            $("<input/>", {
-                                type: "checkbox",
-                                disabled: true,
-                                checked: item.isComplete
-                            })
-                        )
-                    )
                     .append($("<td></td>").text(item.name))
                     .append(
                         $("<td></td>").append(
@@ -59,7 +50,7 @@ function getData() {
                 tr.appendTo(tBody);
             });
 
-            todos = data;
+            beacons = data;
         }
     });
 }
@@ -67,7 +58,9 @@ function getData() {
 function addItem() {
     const item = {
         name: $("#add-name").val(),
-        isComplete: false
+        beaconId: $("#add-beacon-id").val(),
+        extraInfo: $("#add-extra-info").val()
+
     };
 
     $.ajax({
@@ -81,7 +74,9 @@ function addItem() {
         },
         success: function (result) {
             getData();
-            $("#add-name").val("");
+            name: $("#add-name").val("");
+            beaconId: $("#add-beacon-id").val("");
+            extraInfo: $("#add-extra-info").val("");
         }
     });
 }
@@ -97,11 +92,11 @@ function deleteItem(id) {
 }
 
 function editItem(id) {
-    $.each(todos, function (key, item) {
+    $.each(beacons, function (key, item) {
         if (item.id === id) {
             $("#edit-name").val(item.name);
             $("#edit-id").val(item.id);
-            $("#edit-isComplete")[0].checked = item.isComplete;
+            $("#edit-extra-info").val(item.extraInfo);
         }
     });
     $("#spoiler").css({ display: "block" });
@@ -110,7 +105,8 @@ function editItem(id) {
 $(".my-form").on("submit", function () {
     const item = {
         name: $("#edit-name").val(),
-        isComplete: $("#edit-isComplete").is(":checked"),
+        extraInfo: $("#edit-extra-info").val(),
+        beaconId: $("#edit-beacon-id").val(),
         id: $("#edit-id").val()
     };
 
