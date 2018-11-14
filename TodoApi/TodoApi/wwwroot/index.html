@@ -43,8 +43,9 @@
         <h3>Edit</h3>
         <form class="my-form">
             <input type="hidden" id="edit-id">
-            <input type="checkbox" id="edit-isComplete">
             <input type="text" id="edit-name">
+            <input type="text" id="edit-extra-info">
+            <input type="hidden" id="edit-beacon-id">
             <input type="submit" value="Edit">
             <a onclick="closeInput()" aria-label="Close">&#10006;</a>
         </form>
@@ -54,11 +55,11 @@
 
     <table>
         <tr>
-            <th>Name</th>
             <th>Beacon Id</th>
+            <th>Name</th>
             <th>Extra Info</th>
         </tr>
-        <tbody id="todos"></tbody>
+        <tbody id="beacons"></tbody>
     </table>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"

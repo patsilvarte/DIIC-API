@@ -31,7 +31,9 @@ function getData() {
 
             $.each(data, function (key, item) {
                 const tr = $("<tr></tr>")
+                    .append($("<td></td>").text(item.beaconId))
                     .append($("<td></td>").text(item.name))
+                    .append($("<td></td>").text(item.extraInfo))
                     .append(
                         $("<td></td>").append(
                             $("<button>Edit</button>").on("click", function () {
@@ -97,6 +99,7 @@ function editItem(id) {
             $("#edit-name").val(item.name);
             $("#edit-id").val(item.id);
             $("#edit-extra-info").val(item.extraInfo);
+            $("#edit-beacon-id").val(item.beaconId);
         }
     });
     $("#spoiler").css({ display: "block" });
