@@ -1,0 +1,24 @@
+html{
+	background-image: linear-gradient(rgba(66,77,92,0), #A5DBEB);
+	height: 100%;
+}
+
+h1{
+
+	font-family: Tahoma;
+	text-align: center;
+	color:  #23819C;
+	font-size: 100px;
+
+}
+body{
+	font-family: Verdana;
+}
+
+a:visited{
+	color: black;
+}
+
+h3{
+	padding-right: 30%;
+}

@@ -1,6 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <title>segunda vISTa</title>
+    <link rel="shortcut icon" href="blind.png" />
+    <h1>segunda vISTa</h1>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>To-do CRUD</title>
     <style>
@@ -14,13 +18,14 @@
 
         table {
             font-family: Arial, sans-serif;
-            border: 1px solid;
+            border: 2px solid;
             border-collapse: collapse;
+
         }
 
         th {
-            background-color: #0066CC;
-            color: white;
+            border: 2px solid;
+            color: #23819C;
         }
 
         td {
@@ -30,15 +35,14 @@
     </style>
 </head>
 <body>
-    <h1>To-do CRUD</h1>
-    <h3>Add</h3>
+    
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-beacon-id" placeholder="New beacon id">
-        <input type="text" id="add-name" placeholder="beacon name">
-        <input type="text" id="add-extra-info" placeholder="info of the beacon (optional)">
-        <input type="submit" value="Add"> 
+        <h3>Beacon_id: &ensp; <input type="text" id="add-beacon-id" placeholder="New beacon id" required></h3>
+        <h3>Nome do objecto:&ensp;<input type="text" id="add-name" placeholder="beacon name"required=""></h3>
+        <h3>Informação secundária:&ensp; <input type="text" id="add-extra-info" placeholder="info of the beacon (optional)"></h3>
+        <input id = "butsub" type="submit" value="Add"> 
     </form>
-
+    </form>
     <div id="spoiler">
         <h3>Edit</h3>
         <form class="my-form">
