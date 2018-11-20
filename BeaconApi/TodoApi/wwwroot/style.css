@@ -15,7 +15,24 @@ h1{
 
 .ola{
 
-	margin-left: 30%;
+	margin-left: 10%; 
+}
+
+
+.bye{
+	position: absolute;
+	left: 30.6%;
+}
+
+input[type=text] {
+	border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: width 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid black;
 }
 
 .bgimg-1 {
@@ -42,24 +59,37 @@ body{
 
 h3{
 	color: black
+	
 }
 
-butsub{
-	padding-right: 40%;
+.fixe{
 
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 8px 20.4%;
+	display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2px solid black;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
-add-beacon-id{
-
-	padding-right: 30%;
+.fixe:hover {
+   color: black;
+   background-color: white;
 }
-
 .container {
   max-width: 1000px;
-  margin-left: auto;
+  margin-left: 60%;
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
+  position: fixed;
+  bottom:32%;
 }
 
  th {
@@ -67,12 +97,11 @@ add-beacon-id{
     padding: 25px 30px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
   }
 
     tr {
       display: flex;
-      padding: 10px 0;
+      padding: 2px 0;
       &:before {
         color: #6C7A89;
         padding-right: 10px;
