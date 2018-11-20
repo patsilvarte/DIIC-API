@@ -3,7 +3,14 @@
 <head>
     <title>segunda vISTa</title>
     <link rel="shortcut icon" href="blind.png" />
-    <h1>segunda vISTa</h1>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+         <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">segunda <span class="w3-hide-small">vISTa</span></span>
+         </div>
+    </div>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="UTF-8">
     <title>To-do CRUD</title>
@@ -25,7 +32,7 @@
 
         th {
             border: 2px solid;
-            color: #23819C;
+            color: black;
         }
 
         td {
@@ -36,11 +43,12 @@
 </head>
 <body>
     
-    <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+    <form action="javascript:void(0);" method="POST" onsubmit="addItem()" class = "ola">
         <h3>Beacon_id: &ensp; <input type="text" id="add-beacon-id" placeholder="New beacon id" required></h3>
         <h3>Nome do objecto:&ensp;<input type="text" id="add-name" placeholder="beacon name"required=""></h3>
-        <h3>Informação secundária:&ensp; <input type="text" id="add-extra-info" placeholder="info of the beacon (optional)"></h3>
-        <input id = "butsub" type="submit" value="Add"> 
+        <h3>Informação secundária:&ensp; <input type="text" id="add-extra-info" placeholder="info of the beacon (optional)"></h3> 
+        <input value="Add" id = "butsub" class="w3-button w3-black w3-center w3-section" type="submit"> ADD
+        </input>
     </form>
     </form>
     <div id="spoiler">
@@ -57,7 +65,7 @@
 
     <p id="counter"></p>
 
-    <table>
+    <table class = "container">
         <tr>
             <th>Beacon Id</th>
             <th>Name</th>

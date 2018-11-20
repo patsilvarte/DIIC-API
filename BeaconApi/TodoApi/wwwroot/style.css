@@ -1,6 +1,7 @@
 html{
-	background-image: linear-gradient(rgba(66,77,92,0), #A5DBEB);
-	height: 50vw;
+	height: 100%;
+    color: #F5F5F5;
+    line-height: 1.8;
 }
 
 h1{
@@ -11,10 +12,71 @@ h1{
 	font-size: 10vw;
 
 }
+
+.ola{
+
+	margin-left: 30%;
+}
+
+.bgimg-1 {
+    background-image: url('navcog.jpg');
+    min-height: 100%;
+}
+
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+        min-height: 300px;
+    }
+}
 body{
 	font-family: Verdana;
 }
 
 h3{
-	padding-right: 30vw;
+	color: black
 }
+
+butsub{
+	padding-right: 40%;
+
+}
+
+add-beacon-id{
+
+	padding-right: 30%;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ th {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+    tr {
+      display: flex;
+      padding: 10px 0;
+      &:before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
