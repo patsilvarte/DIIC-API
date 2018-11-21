@@ -34,6 +34,18 @@ input[type=text] {
     outline: none;
 }
 
+.oi{
+  margin-left: 5%;
+}
+
+.oi2{
+  margin-left: 4%;
+}
+
+.oi3{
+  margin-left: 2.5%;
+}
+
 input[type=text]:focus {
     border: 3px solid black;
 }
