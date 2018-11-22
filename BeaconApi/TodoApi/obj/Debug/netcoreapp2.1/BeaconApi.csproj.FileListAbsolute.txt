@@ -12,3 +12,17 @@ E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.p
 E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.RazorTargetAssemblyInfo.cache
 E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.dll
 E:\Documents\GitHub\DIIC-API\TodoApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.pdb
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.deps.json
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.runtimeconfig.json
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.runtimeconfig.dev.json
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.dll
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\bin\Debug\netcoreapp2.1\BeaconApi.pdb
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.csprojAssemblyReference.cache
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.csproj.CoreCompileInputs.cache
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.RazorAssemblyInfo.cache
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.RazorAssemblyInfo.cs
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.AssemblyInfoInputs.cache
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.AssemblyInfo.cs
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.RazorTargetAssemblyInfo.cache
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.dll
+C:\Users\Mafalda\Documents\34ano\DIIC\DIIC-API\BeaconApi\TodoApi\obj\Debug\netcoreapp2.1\BeaconApi.pdb

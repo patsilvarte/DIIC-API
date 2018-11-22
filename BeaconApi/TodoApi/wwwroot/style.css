@@ -30,8 +30,6 @@ input[type=text] {
     -webkit-transition: 0.5s;
     transition: width 0.5s;
     outline: none;
-    width: 100%;
-  max-width: 270px;
 }
 
 -webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -67,23 +65,38 @@ input[type=text]:focus {
         width: 100%;
         float: right;
         margin-top: 0;
-        margin-right: 30%;
+        margin-right: 25%;
     }
 }
 
 @media screen and (max-width: 800px) {
     table{
+      position: relative;
+      display: inline-block;
+      float: left;
       width: 100%;
-      margin-top: 57%;
+      top: 130%;
+      left: 1%;
+
     }
 }
 
 @media screen and (max-width: 800px){
-  .counter {
-    width: 100%;
-    margin-top: 40%;
+  .spoiler {
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 0%;
   }
 } 
+
+@media screen and (max-width: 800px){
+  .counter {
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 0%;
+  }
+} 
+
 
 @media screen and (max-width: 800px){
   .add {
@@ -126,14 +139,13 @@ input[type=text]:focus {
   border: 5px solid black;
   position: absolute;
   top:52%;
-  left:90%;
+  right:0%;
 
 }
 
 .spoiler{
 
   margin-left: 5%;
-  margin-top: 0%;
   margin-bottom: 2%;
   position: absolute;
 }
@@ -142,7 +154,7 @@ table {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     position: absolute;
-    left: 51%;
+    right: 3%;
     margin-top: -17%;
     width: 45%;
 }
