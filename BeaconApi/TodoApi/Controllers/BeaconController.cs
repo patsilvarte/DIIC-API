@@ -31,10 +31,10 @@ namespace BeaconApi.Controllers
             return _context.beaconItems.ToList();
         }
 
-        [HttpGet("{id}", Name = "GetBeacon")]
-        public ActionResult<BeaconItem> GetById(long id)
+        [HttpGet("{beaconId}", Name = "GetBeacon")]
+        public ActionResult<BeaconItem> GetById(string beaconId)
         {
-            var item = _context.beaconItems.Find(id);
+            var item = _context.beaconItems.Find(beaconId);
             if (item == null)
             {
                 return NotFound();
@@ -48,13 +48,13 @@ namespace BeaconApi.Controllers
             _context.beaconItems.Add(item);
             _context.SaveChanges();
 
-            return CreatedAtRoute("GetBeacon", new { id = item.Id }, item);
+            return CreatedAtRoute("GetBeacon", new { beaconId = item.BeaconId }, item);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult Update(long id, BeaconItem item)
+        [HttpPut("{beaconId}")]
+        public IActionResult Update(string beaconId, BeaconItem item)
         {
-            var beacon = _context.beaconItems.Find(id);
+            var beacon = _context.beaconItems.Find(beaconId);
             if (beacon == null)
             {
                 return NotFound();
@@ -69,10 +69,10 @@ namespace BeaconApi.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(long id)
+        [HttpDelete("{beaconId}")]
+        public IActionResult Delete(string beaconId)
         {
-            var beacon = _context.beaconItems.Find(id);
+            var beacon = _context.beaconItems.Find(beaconId);
             if (beacon == null)
             {
                 return NotFound();

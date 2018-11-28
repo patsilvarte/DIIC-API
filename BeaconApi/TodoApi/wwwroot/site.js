@@ -36,15 +36,15 @@ function getData() {
                     .append($("<td></td>").text(item.extraInfo))
                     .append(
                         $("<td></td>").append(
-                            $("<button>Edit</button>").on("click", function () {
-                                editItem(item.id);
+                        $("<button>Edit</button>").on("click", function () {
+                            editItem(item.beaconId);
                             })
                         )
                     )
                     .append(
                         $("<td></td>").append(
-                            $("<button>Delete</button>").on("click", function () {
-                                deleteItem(item.id);
+                        $("<button>Delete</button>").on("click", function () {
+                            deleteItem(item.beaconId);
                             })
                         )
                     );
@@ -83,9 +83,9 @@ function addItem() {
     });
 }
 
-function deleteItem(id) {
+function deleteItem(beaconId) {
     $.ajax({
-        url: uri + "/" + id,
+        url: uri + "/" + beaconId,
         type: "DELETE",
         success: function (result) {
             getData();
@@ -93,9 +93,9 @@ function deleteItem(id) {
     });
 }
 
-function editItem(id) {
+function editItem(beaconId) {
     $.each(beacons, function (key, item) {
-        if (item.id === id) {
+        if (item.beaconId === beaconId) {
             $("#edit-name").val(item.name);
             $("#edit-id").val(item.id);
             $("#edit-extra-info").val(item.extraInfo);
@@ -115,7 +115,7 @@ $(".my-form").on("submit", function () {
     };
 
     $.ajax({
-        url: uri + "/" + $("#edit-id").val(),
+        url: uri + "/" + $("#edit-beacon-id").val(),
         type: "PUT",
         accepts: "application/json",
         contentType: "application/json",
