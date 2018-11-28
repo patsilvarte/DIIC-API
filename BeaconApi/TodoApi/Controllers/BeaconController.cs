@@ -16,13 +16,13 @@ namespace BeaconApi.Controllers
             _context = context;
             
             //ver depois se da para tirar
-            if (_context.beaconItems.Count() == 0)
+            /*if (_context.beaconItems.Count() == 0)
             {
                 // Create a new TodoItem if collection is empty,
                 // which means you can't delete all TodoItems.
                 _context.beaconItems.Add(new BeaconItem { Name = "Beacon1" });
                 _context.SaveChanges();
-            }
+            }*/
         }
 
         [HttpGet]
