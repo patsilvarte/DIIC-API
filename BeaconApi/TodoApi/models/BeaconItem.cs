@@ -8,7 +8,7 @@ namespace BeaconApi.models
     public class BeaconItem
     {
         public long Id { get; set; }
-        public long BeaconId { get; set; }
+        public string BeaconId { get; set; }
         public string Name { get; set; }
         public string ExtraInfo { get; set; }
     }
