@@ -83,8 +83,8 @@ input[type=text]:focus {
 
 @media screen and (max-width: 800px){
   .spoiler {
-    position: absolute;
-    margin-top: 35%;
+    position: relative;
+    margin-top: auto;
     margin-left: 0%;
   }
 } 
@@ -140,6 +140,7 @@ input[type=text]:focus {
   position: absolute;
   top:52%;
   right:0%;
+  display: none;
 
 }
 
