@@ -59,6 +59,14 @@ input[type=text]:focus {
     }
 }
 
+@media only screen and (max-width: 440px) {
+    .bgimg-1 {
+        background-attachment: scroll;
+        min-height: 300px;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .inputsh {
         position: relative;
@@ -69,14 +77,39 @@ input[type=text]:focus {
     }
 }
 
-@media screen and (max-width: 800px) {
+
+@media only screen and (max-width: 440px ) {
+    .inputsh {
+        position: relative;
+        width: 100%;
+        float: right;
+        margin-top: 0;
+        margin-right: 25%;
+    }
+}
+
+@media only screen and (max-width: 800px)  {
     table{
       position: relative;
       display: inline-block;
       float: left;
       width: 100%;
       top: 130%;
-      left: 1%;
+      left: 10%;
+
+    }
+}
+
+
+
+@media only screen and (max-device-width: 440px) {
+    table{
+      position: relative;
+      display: inline-block;
+      float: left;
+      width: 100%;
+      top: 190%;
+      left: 10%;
 
     }
 }
@@ -158,7 +191,11 @@ table {
     right: 3%;
     margin-top: -17%;
     width: 45%;
+
 }
+
+
+
 
 th, td {
     padding: 8px;
