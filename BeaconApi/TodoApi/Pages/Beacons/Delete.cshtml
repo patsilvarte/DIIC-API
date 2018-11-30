@@ -1,0 +1,40 @@
+@page
+@model BeaconApi.Pages.Beacons.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>BeaconItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BeaconItem.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeaconItem.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BeaconItem.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeaconItem.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BeaconItem.ExtraInfo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeaconItem.ExtraInfo)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="BeaconItem.BeaconId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+@page
+@model BeaconApi.Pages.Beacons.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BeaconItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BeaconItem.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeaconItem.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BeaconItem.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeaconItem.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BeaconItem.ExtraInfo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BeaconItem.ExtraInfo)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.BeaconItem.BeaconId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,44 @@
+@page
+@model BeaconApi.Pages.Beacons.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>BeaconItem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BeaconItem.Id" class="control-label"></label>
+                <input asp-for="BeaconItem.Id" class="form-control" />
+                <span asp-validation-for="BeaconItem.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BeaconItem.Name" class="control-label"></label>
+                <input asp-for="BeaconItem.Name" class="form-control" />
+                <span asp-validation-for="BeaconItem.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BeaconItem.ExtraInfo" class="control-label"></label>
+                <input asp-for="BeaconItem.ExtraInfo" class="form-control" />
+                <span asp-validation-for="BeaconItem.ExtraInfo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
