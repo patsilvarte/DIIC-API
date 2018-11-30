@@ -92,9 +92,10 @@ input[type=text]:focus {
     table{
       position: relative;
       display: inline-block;
+
       float: left;
       width: 100%;
-      top: 180%;
+      top: 150%;
       left: 10%;
 
     }
@@ -105,10 +106,23 @@ input[type=text]:focus {
 @media only screen and (max-device-width: 440px) {
     table{
       position: relative;
-      display: block;
+      display: inline-block;
+      float: left;
+       padding-right: 100px;
+      width: 100%;
+      top: 160%;
+      left: 10%;
+
+    }
+}
+
+@media only screen and (min-device-height: 400px) {
+    table{
+      position: relative;
+      display: inline-block;
       float: left;
       width: 100%;
-      top: 150%;
+      top: 180%;
       left: 10%;
 
     }
