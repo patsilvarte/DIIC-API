@@ -110,7 +110,7 @@ input[type=text]:focus {
       float: left;
        padding-right: 100px;
       width: 100%;
-      top: 150%;
+      top: 120%;
       left: 10%;
 
     }
@@ -122,7 +122,7 @@ input[type=text]:focus {
       display: inline-block;
       float: left;
       width: 100%;
-      top: 200%;
+      top: 220%;
       left: 10%;
 
     }
